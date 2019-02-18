@@ -1,0 +1,85 @@
+{"sender": "Search Buddy", "text": "sending from spyder", "date": "2019-02-17 13:29"}
+{"sender": "Search Buddy", "text": "hi", "date": "2019-02-17 13:20"}
+{"sender": "Search Buddy", "text": "*hacker voice* I'm in", "date": "2019-02-16 23:53"}
+{"sender": "GroupMe", "text": "Chris Rech added Search Buddy to the group.", "date": "2019-02-16 23:53"}
+{"sender": "BasicBot", "text": "hello\r\n", "date": "2019-02-16 23:40"}
+{"sender": "Chris Rech", "text": "test", "date": "2019-02-16 23:18"}
+{"sender": "BasicBot", "text": "Hi, Andrew Allen", "date": "2019-02-16 23:09"}
+{"sender": "Andrew Allen", "text": "hi bot", "date": "2019-02-16 23:09"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 23:09"}
+{"sender": "Andrew Allen", "text": "Hi bot", "date": "2019-02-16 23:08"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 23:08"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 23:08"}
+{"sender": "BasicBot", "text": "im a bot", "date": "2019-02-16 23:05"}
+{"sender": "Andrew Allen", "text": "hi", "date": "2019-02-16 23:02"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 23:02"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 23:01"}
+{"sender": "Chris Rech", "text": ": /", "date": "2019-02-16 23:01"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "I'm alive yo", "date": "2019-02-16 23:00"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 23:00"}
+{"sender": "Andrew Allen", "text": "hi", "date": "2019-02-16 22:58"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 22:58"}
+{"sender": "Chris Rech", "text": ": /", "date": "2019-02-16 22:56"}
+{"sender": "Andrew Allen", "text": "just work already", "date": "2019-02-16 22:56"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 22:56"}
+{"sender": "Andrew Allen", "text": "hi", "date": "2019-02-16 22:54"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 22:54"}
+{"sender": "Chris Rech", "text": ".", "date": "2019-02-16 22:53"}
+{"sender": "Andrew Allen", "text": "go bot go", "date": "2019-02-16 22:51"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 22:50"}
+{"sender": "Andrew Allen", "text": "hi there buddy", "date": "2019-02-16 22:50"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 22:50"}
+{"sender": "Andrew Allen", "text": "h", "date": "2019-02-16 22:49"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 22:49"}
+{"sender": "Chris Rech", "text": ".", "date": "2019-02-16 22:47"}
+{"sender": "Andrew Allen", "text": "hi", "date": "2019-02-16 22:45"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 22:44"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 22:44"}
+{"sender": "Chris Rech", "text": ".", "date": "2019-02-16 22:43"}
+{"sender": "Chris Rech", "text": ".", "date": "2019-02-16 22:43"}
+{"sender": "Flask Test", "text": "from web again", "date": "2019-02-16 22:43"}
+{"sender": "BasicBot", "text": "hello there from port 5000", "date": "2019-02-16 22:41"}
+{"sender": "Chris Rech", "text": ".", "date": "2019-02-16 22:39"}
+{"sender": "Flask Test", "text": "message from website ", "date": "2019-02-16 22:37"}
+{"sender": "Andrew Allen", "text": "hi", "date": "2019-02-16 22:37"}
+{"sender": "Andrew Allen", "text": "hello", "date": "2019-02-16 22:36"}
+{"sender": "Chris Rech", "text": ".", "date": "2019-02-16 22:35"}
+{"sender": "Chris Rech", "text": "msg", "date": "2019-02-16 22:34"}
+{"sender": "Andrew Allen", "text": "hi Basic Bot", "date": "2019-02-16 22:34"}
+{"sender": "GroupMe", "text": "Chris Rech added the Flask Test bot", "date": "2019-02-16 22:34"}
+{"sender": "Andrew Allen", "text": "@Cat Facts ", "date": "2019-02-16 22:34"}
+{"sender": "GroupMe", "text": "Andrew Allen added Cat Facts to the group.", "date": "2019-02-16 22:34"}
+{"sender": "BasicBot", "text": "hi again\r\n", "date": "2019-02-16 22:32"}
+{"sender": "BasicBot", "text": "hello", "date": "2019-02-16 22:29"}
+{"sender": "Andrew Allen", "text": "@BasicBot hi", "date": "2019-02-16 22:29"}
+{"sender": "BasicBot", "text": "hi", "date": "2019-02-16 22:28"}
+{"sender": "GroupMe", "text": "Andrew Allen added the BasicBot bot", "date": "2019-02-16 22:01"}
+{"sender": "GroupMe", "text": "Andrew Allen added Chris Rech to the group.", "date": "2019-02-16 21:57"}
