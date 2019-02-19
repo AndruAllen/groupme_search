@@ -1,8 +1,12 @@
 from groupy import Client
+from difflib import SequenceMatcher
 import json
+import os.path
 
-ACCESS_TOKEN = "yrrudwbqjnb8BbrDqZ6oAhLMfqPfGBaGt5Y97WqV"
-MAX_GROUP = 10
+USE_PERSONAL_DATA = True
+MAX_GROUP = 1
+INCLUDE = []
+SIMILARITY_THRESHOLD = 0.8
 
 def messageToJson(message):
     dictMsg = {
@@ -12,17 +16,46 @@ def messageToJson(message):
         }
     return json.dumps(dictMsg)
 
+def isIncluded(groupName):
+    for includedGroup in INCLUDE:
+        similarity=SequenceMatcher(None,includedGroup,groupName).ratio()
+        if (similarity > SIMILARITY_THRESHOLD):
+            return True
+    return False
+
+if (USE_PERSONAL_DATA):
+    accessTokenFile = open(os.path.dirname(__file__) + "/../MyAccessToken.txt", "r")
+    ACCESS_TOKEN = accessTokenFile.read()
+else:
+    ACCESS_TOKEN = "yrrudwbqjnb8BbrDqZ6oAhLMfqPfGBaGt5Y97WqV"
+
+includeFile = open("IncludeLarge.txt", "r")
+for line in includeFile:
+    INCLUDE.append(line)
+
 client = Client.from_token(ACCESS_TOKEN)
 groups = list(client.groups.list_all())
 groupCt = 0
 
+GroupNamesIncluded = []
+GroupNamesExcluded = []
+totalMessages = 0
+
 for group in groups:
     if (groupCt == MAX_GROUP):
         break
+    groupCt += 1
     groupName = group.data["name"]
+    if (not isIncluded(groupName)):
+        GroupNamesExcluded.append(groupName)
+        continue
+    messageCount = group.data["messages"]["count"]
+    GroupNamesIncluded.append("[" + str(messageCount) + "] " + groupName)
+    totalMessages += messageCount
+    
     filename = "Messages for " + groupName + ".txt"
     messageFile = open(filename, "w")
     for message in group.messages.list_all():
         messageFile.write(messageToJson(message) + "\n")
     messageFile.close()
-    groupCt += 1
+    
