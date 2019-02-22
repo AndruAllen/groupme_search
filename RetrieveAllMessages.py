@@ -4,7 +4,7 @@ import json
 import os.path
 
 USE_PERSONAL_DATA = True
-MAX_GROUP = 1
+MAX_GROUP = 100
 INCLUDE = []
 SIMILARITY_THRESHOLD = 0.8
 
@@ -40,16 +40,19 @@ groupCt = 0
 GroupNamesIncluded = []
 GroupNamesExcluded = []
 totalMessages = 0
+allMessageCounts = []
 
 for group in groups:
     if (groupCt == MAX_GROUP):
         break
     groupCt += 1
+    messageCount = group.data["messages"]["count"]
+    allMessageCounts.append(messageCount)
+    """
     groupName = group.data["name"]
     if (not isIncluded(groupName)):
         GroupNamesExcluded.append(groupName)
         continue
-    messageCount = group.data["messages"]["count"]
     GroupNamesIncluded.append("[" + str(messageCount) + "] " + groupName)
     totalMessages += messageCount
     
@@ -58,4 +61,5 @@ for group in groups:
     for message in group.messages.list_all():
         messageFile.write(messageToJson(message) + "\n")
     messageFile.close()
+    """
     
