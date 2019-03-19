@@ -5,7 +5,7 @@ import os.path
 
 SCRIPT_DIR = os.path.dirname(__file__)
 USE_PERSONAL_DATA = True
-MAX_GROUP = 100
+MAX_GROUP = 10
 INCLUDE = []
 SIMILARITY_THRESHOLD = 0.8
 
