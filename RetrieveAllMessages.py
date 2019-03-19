@@ -4,7 +4,7 @@ import json
 import os.path
 
 USE_PERSONAL_DATA = True
-MAX_GROUP = 100
+MAX_GROUP = 10
 INCLUDE = []
 SIMILARITY_THRESHOLD = 0.8
 
