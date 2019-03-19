@@ -3,6 +3,7 @@ from difflib import SequenceMatcher
 import json
 import os.path
 
+SCRIPT_DIR = os.path.dirname(__file__)
 USE_PERSONAL_DATA = True
 MAX_GROUP = 100
 INCLUDE = []
@@ -24,7 +25,7 @@ def isIncluded(groupName):
     return False
 
 if (USE_PERSONAL_DATA):
-    accessTokenFile = open(os.path.dirname(__file__) + "/../MyAccessToken.txt", "r")
+    accessTokenFile = open(SCRIPT_DIR + "/../MyAccessToken.txt", "r")
     ACCESS_TOKEN = accessTokenFile.read()
 else:
     ACCESS_TOKEN = "yrrudwbqjnb8BbrDqZ6oAhLMfqPfGBaGt5Y97WqV"
@@ -57,7 +58,7 @@ for group in groups:
     totalMessages += messageCount
     
     filename = "Messages for " + groupName + ".txt"
-    messageFile = open(filename, "w")
+    messageFile = open(SCRIPT_DIR + '/datafiles/' + filename, "w")
     for message in group.messages.list_all():
         messageFile.write(messageToJson(message) + "\n")
     messageFile.close()
