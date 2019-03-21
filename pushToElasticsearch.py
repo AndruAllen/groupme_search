@@ -6,7 +6,7 @@ SCRIPT_DIR = os.path.dirname(__file__)
 CLIENT = Elasticsearch()
 
 def yeild_messages(filename):
-	chat_index = filename.lower().replace('.','').replace(' ','_')
+	chat_index = filename.lower().replace('.','_').replace(' ','_')
 	with open(os.path.join(SCRIPT_DIR,'datafiles', filename)) as file:
 		stop = False
 		for line in file:
@@ -26,3 +26,12 @@ def yeild_messages(filename):
 
 def push_from_file(filename):
 	print(helpers.bulk(CLIENT, yeild_messages(filename)))
+
+filename = "Messages for D&D Is For The Boys.txt"
+push_from_file(filename)
+
+def searchByKeyword(filename, keyword):
+   chat_index = filename.lower().replace('.','_').replace(' ','_')
+   res = CLIENT.search(index=chat_index, doc_type="message", body={"size":100, "query": {"query_string": {"query": keyword}}})
+   for hit in res["hits"]["hits"]:
+      print (hit["_source"])
