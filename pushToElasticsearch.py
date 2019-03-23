@@ -27,7 +27,7 @@ def yeild_messages(filename):
 def push_from_file(filename):
 	print(helpers.bulk(CLIENT, yeild_messages(filename)))
 
-filename = "Messages for D&D Is For The Boys.txt"
+filename = "Messages for ICPC Forever.txt"
 push_from_file(filename)
 
 def searchByKeyword(filename, keyword):
@@ -35,3 +35,5 @@ def searchByKeyword(filename, keyword):
    res = CLIENT.search(index=chat_index, doc_type="message", body={"size":100, "query": {"query_string": {"query": keyword}}})
    for hit in res["hits"]["hits"]:
       print (hit["_source"])
+
+searchByKeyword(filename, "programming")
