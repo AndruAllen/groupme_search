@@ -1,4 +1,7 @@
 from groupy import Client
+from SearchHandler import SearchHandler
+from ResponseFormatter import ResponseFormatter
+from time import sleep
 
 class QueryHandler:
     
@@ -6,6 +9,9 @@ class QueryHandler:
         self.ACCESS_TOKEN = ACCESS_TOKEN
         self.MY_MENTION = MY_MENTION
         self.client = Client.from_token(ACCESS_TOKEN)
+        self.recentMessageIdLookup = {}
+        self.searchHandler = SearchHandler()
+        self.responseFormatter = ResponseFormatter()
     
     def GetGroupsFromUser(self):
         return list(self.client.groups.list_all())
@@ -27,64 +33,62 @@ class QueryHandler:
             if (messageText == None):
                 continue
             findIndex = messageText.find(self.MY_MENTION)
-            print(messageText, findIndex)
             if (findIndex != -1):
-                searchTerms = messageText[findIndex + len(self.MY_MENTION):].split()
+                searchKeywords = messageText[findIndex + len(self.MY_MENTION):].split()
                 searchPoster = message.name
-                searches.append({"terms": searchTerms, "poster": searchPoster})
+                searches.append({"keywords": searchKeywords, "poster": searchPoster})
         return searches
     
-    def PartitionGroups(self, currentGroups, existingGroups):
-        newGroups = []
-        oldGroups = []
-        for group in currentGroups:
-            if group in existingGroups:
-                oldGroups.append(group)
-            else:
-                newGroups.append(group)
-        return [newGroups, oldGroups]
+    def GetRecentMessageId(self, group):
+        groupId = self.searchHandler.GetIdFromGroup(group)
+        if (groupId not in self.recentMessageIdLookup):
+            self.recentMessageIdLookup[groupId] = 0
+        return self.recentMessageIdLookup[groupId]
     
-    #--- To be completed
-    
-    def SendSearchResponse(self):
-        pass
-    
-    def HandleSearch(self, group, search):
-        pass
-    
-    def GetGroupsFromDatabase(self):
-        return []
-    
-    def CreateGroupInDatabse(self, group):
-        pass
-    
-    def GetTimestampFromDatabase(self, group):
-        return 0
-    
-    def InsertMessagesIntoDatabase(self, messages):
-        pass
-    
-    def InsertMessagesIntoElasticSearch(self, messages):
-        pass
-    
-    #--- To be completed
-    
+    def UpdateRecentMessageId(self, group, messages):
+        if (len(messages) > 0):
+            groupId = self.searchHandler.GetIdFromGroup(group)
+            recentMessageId = messages[-1].data["id"]
+            self.recentMessageIdLookup[groupId] = recentMessageId
+        
+    def PostResponse(self, group, text):
+        print(text)
+        group.post(text)
+        
+    def RespondToSearch(self, group, search):
+        searchResults = self.searchHandler.ExecuteSearch(group, search["keywords"], self.MY_MENTION[1:])
+        responseHeader = self.responseFormatter.GenerateHeader(search, searchResults)
+        responseFooter = self.responseFormatter.GenerateFooter()
+        allResponseText = [responseHeader]
+        for [key, result] in searchResults:
+            responseSingleResult = self.responseFormatter.GenerateSingleResultResponse(search, result)
+            allResponseText.append(responseSingleResult)
+        allResponseText.append(responseFooter)
+        for responseText in allResponseText:
+            self.PostResponse(group, responseText)
+        
     def HandleGroupOperations(self, group):
-        timestamp = self.GetTimestampFromDatabase(group)
-        messages = self.GetRecentMessagesFromGroup(group, timestamp)
-        self.InsertMessagesIntoDatabase(messages)
-        self.InsertMessagesIntoElasticSearch(messages)
-        searches = self.GetSearchRequestsFromMessages(messages)
-        for search in searches:
-            self.HandleSearch(group, search)
+        recentMessageId = self.GetRecentMessageId(group)
+        messages = self.GetRecentMessagesFromGroup(group, recentMessageId)
+        self.UpdateRecentMessageId(group, messages)
+        self.searchHandler.InsertMessages(group, messages)
+        self.searches = self.GetSearchRequestsFromMessages(messages)
+        print("Sleeping in between group operations")
+        sleep(10)
+        for search in self.searches:
+            self.RespondToSearch(group, search)
     
     def Execute(self):
-        currentGroups = self.GetGroupsFromUser()
-        existingGroups = self.GetGroupsFromDatabase()
-        [newGroups, oldGroups] = self.PartitionGroups(currentGroups, existingGroups)
-        for group in newGroups:
-            self.CreateGroupInDatabase(group)
+        groups = self.GetGroupsFromUser()
+        for group in groups:
             self.HandleGroupOperations(group)
-        for group in oldGroups:
-            self.HandleGroupOperations(group)
-    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
