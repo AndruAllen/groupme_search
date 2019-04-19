@@ -27,7 +27,56 @@ class QueryHandler:
                 searches.append({"terms": searchTerms, "poster": searchPoster})
         return searches
     
+    def PartitionGroups(self, currentGroups, existingGroups):
+        newGroups = []
+        oldGroups = []
+        for group in currentGroups:
+            if group in existingGroups:
+                oldGroups.append(group)
+            else:
+                newGroups.append(group)
+        return [newGroups, oldGroups]
+    
+    #--- To be completed
+    
     def SendSearchResponse(self):
         pass
     
+    def HandleSearch(self, group, search):
+        pass
     
+    def GetGroupsFromDatabase(self):
+        return []
+    
+    def CreateGroupInDatabse(self, group):
+        pass
+    
+    def GetTimestampFromDatabase(self, group):
+        return 0
+    
+    def InsertMessagesIntoDatabase(self, messages):
+        pass
+    
+    def InsertMessagesIntoElasticSearch(self, messages):
+        pass
+    
+    #--- To be completed
+    
+    def HandleGroupOperations(self, group):
+        timestamp = self.GetTimestampFromDatabase(group)
+        messages = self.GetRecentMessagesFromGroup(group, timestamp)
+        self.InsertMessagesIntoDatabase(messages)
+        self.InsertMessagesIntoElasticSearch(messages)
+        searches = self.GetSearchRequestsFromMessages(messages)
+        for search in searches:
+            self.HandleSearch(group, search)
+    
+    def Execute(self):
+        currentGroups = self.GetGroupsFromUser()
+        existingGroups = self.GetGroupsFromDatabase()
+        [newGroups, oldGroups] = self.PartitionGroups(currentGroups, existingGroups)
+        for group in newGroups:
+            self.CreateGroupInDatabase(group)
+            self.HandleGroupOperations(group)
+        for group in oldGroups:
+            self.HandleGroupOperations(group)
