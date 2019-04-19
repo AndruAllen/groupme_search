@@ -10,8 +10,15 @@ class QueryHandler:
     def GetGroupsFromUser(self):
         return list(self.client.groups.list_all())
     
-    def GetRecentMessagesFromGroup(self, group, timestamp):
-        return group.messages.list_after(timestamp)
+    def GetRecentMessagesFromGroup(self, group, recentMessageId):
+        recentMessages = []
+        while (True):
+            messagesBlock = group.messages.list_after(recentMessageId)
+            if (len(messagesBlock.items) == 0):
+                return recentMessages
+            for message in messagesBlock:
+                recentMessages.append(message)
+            recentMessageId = messagesBlock[-1].data["id"]
     
     def GetSearchRequestsFromMessages(self, messages):
         searches = []
@@ -80,3 +87,4 @@ class QueryHandler:
             self.HandleGroupOperations(group)
         for group in oldGroups:
             self.HandleGroupOperations(group)
+    
