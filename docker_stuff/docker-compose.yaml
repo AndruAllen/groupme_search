@@ -1,6 +1,14 @@
 version: '3.5'
 
 services:
+  mongo:
+    image: mongo:3.4.20-xenial
+    restart: always
+    networks:
+      - main
+    ports:
+      - "27017:27017"
+
   elasticsearch:
     build:
       context: elasticsearch/
