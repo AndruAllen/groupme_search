@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from QueryHandler import QueryHandler
 
 ACCESS_TOKEN = "yrrudwbqjnb8BbrDqZ6oAhLMfqPfGBaGt5Y97WqV"

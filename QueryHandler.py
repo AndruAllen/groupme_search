@@ -3,6 +3,7 @@ from SearchHandler import SearchHandler
 from ResponseFormatter import ResponseFormatter
 from time import sleep
 from datetime import datetime
+from pymongo import MongoClient
 
 class QueryHandler:
     
@@ -11,8 +12,13 @@ class QueryHandler:
         self.MY_MENTION = MY_MENTION
         self.INIT_TIME = self.GetInitTime()
         self.GROUPME_CHAR_LIM = 1000
+        self.mongo_client = MongoClient()
+        self.db = self.mongo_client['chats']
         self.client = Client.from_token(ACCESS_TOKEN)
-        self.recentMessageIdLookup = {}
+        # new format: recentMessageIdLookup = {'_id':0, group_id_0:message_id_latest, ...}
+        self.recentMessageIdLookup = self.db['recentMessageIdLookup'].find_one({'_id':0}) # single document collection...
+        if self.recentMessageIdLookup == None:
+            self.db['recentMessageIdLookup'].insert_one({'_id':0})
         self.searchesByGroup = []
         self.groupsToSearch = []
         self.searchHandler = SearchHandler()
@@ -126,11 +132,12 @@ class QueryHandler:
     def Execute(self):
         print("Executing query handler")
         groups = self.GetGroupsFromUser()
+        self.recentMessageIdLookup = self.db['recentMessageIdLookup'].find_one({'_id':0})
         for group in groups:
             self.HandleGroupOperations(group)
-        sleep(5)
+        self.db['recentMessageIdLookup'].replace_one({'_id':0}, self.recentMessageIdLookup, upsert=True)
+        sleep(2)
         self.BulkRespondToSearches()
-        
         
         
         
