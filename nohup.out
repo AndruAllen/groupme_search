@@ -3125,4 +3125,285 @@ Executing query handler
 Executing query handler
 Executing query handler
 Executing query handler
-Executing query handler
+Executing query handlercreated es index for: 49935952
+(47, [])
+created es index for: 48280673
+(158, [])
+Hello Chris Rech, your search for [hello, buddy, how, goes, it] returned 4 results.
+[04/20 02:36:21] Chris Rech: I it not he
+[04/20 02:34:46] Chris Rech: a in that have i it
+[04/20 02:33:48] Chris Rech: hello world
+c
+[04/20 02:32:05] GroupMe: Chris Rech added Search Buddy to the group.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [pls, wrk] returned 0 results.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [pls, wrk] returned 0 results.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [Search] returned 1 results.
+[04/20 02:32:05] GroupMe: Chris Rech added Search Buddy to the group.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [How, are, you?] returned 1 results.
+[04/20 02:35:18] Chris Rech: can like time no just him known take people into year your
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [error] returned 1 results.
+[04/20 06:01:28] Andrew Allen: This was the error so I just increased the wait time back to 10 to be safe. Is that the same error as before?
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [are, you, there?] returned 2 results.
+[04/20 02:36:26] Chris Rech: as you this but his they
+[04/20 02:34:56] Chris Rech: you do at this but his
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [you, there] returned 5 results.
+[04/20 04:49:37] Andrew Allen: hey there
+[04/20 02:36:31] Chris Rech: my one all would there their
+[04/20 02:36:26] Chris Rech: as you this but his they
+[04/20 02:35:09] Chris Rech: would there their what so up out if about who get which go me when
+[04/20 02:34:56] Chris Rech: you do at this but his
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [did, you, sleep, well?] returned 2 results.
+[04/20 02:36:26] Chris Rech: as you this but his they
+[04/20 02:34:56] Chris Rech: you do at this but his
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [here?] returned 0 results.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [here, too?] returned 1 results.
+[04/20 04:49:30] Andrew Allen: hey here
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [here, too?] returned 2 results.
+[04/20 16:27:48] Andrew Allen: here
+[04/20 04:49:30] Andrew Allen: hey here
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [here?] returned 0 results.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [you, good?] returned 2 results.
+[04/20 02:36:26] Chris Rech: as you this but his they
+[04/20 02:34:56] Chris Rech: you do at this but his
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [you] returned 2 results.
+[04/20 02:36:26] Chris Rech: as you this but his they
+[04/20 02:34:56] Chris Rech: you do at this but his
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [not] returned 4 results.
+[04/20 16:31:04] Chris Rech: that's... not right
+[04/20 06:07:43] Andrew Allen: Never mind just crashed again... Indexing while searching does not seem to be so nice
+[04/20 02:36:21] Chris Rech: I it not he
+[04/20 02:34:49] Chris Rech: for not on with he as
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [Andrew, Allen, added] returned 9 results.
+[04/20 16:52:17] Andrew Allen: Yeah.. I'm trying to fix that because MongoDB has the full history but ES doesn't for some reason
+[04/20 16:27:48] Andrew Allen: here
+[04/20 15:16:03] Andrew Allen: hi there
+[04/20 04:49:30] Andrew Allen: hey here
+[04/20 04:28:32] Andrew Allen: https://stackoverflow.com/questions/37293900/inserting-millions-of-documents-mongo-pymongo-insert-many
+[04/20 04:28:15] Andrew Allen: https://www.bensound.com/royalty-free-music/cinematic
+[04/20 04:27:55] Andrew Allen: https://www.nytimes.com/2019/04/19/us/politics/mueller-report-democrats-republicans.html
+[04/20 02:32:05] GroupMe: Chris Rech added Search Buddy to the group.
+[04/20 02:31:49] GroupMe: Chris Rech added Andrew Allen to the group.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [added] returned 2 results.
+[04/20 02:32:05] GroupMe: Chris Rech added Search Buddy to the group.
+[04/20 02:31:49] GroupMe: Chris Rech added Andrew Allen to the group.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [added] returned 2 results.
+[04/20 02:32:05] GroupMe: Chris Rech added Search Buddy to the group.
+[04/20 02:31:49] GroupMe: Chris Rech added Andrew Allen to the group.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [you, there?] returned 2 results.
+[04/20 02:36:26] Chris Rech: as you this but his they
+[04/20 02:34:56] Chris Rech: you do at this but his
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [what] returned 2 results.
+[04/20 17:48:34] Chris Rech: Ouch what changed
+[04/20 02:35:09] Chris Rech: would there their what so up out if about who get which go me when
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for ["Im", just, messing, with, things, a, bit., The, rebooting, "doesnt", seem, to, work, super, well, for, ES, so, "Im", trying, to, fix, it.] returned 10 results.
+[04/20 16:52:17] Andrew Allen: Yeah.. I'm trying to fix that because MongoDB has the full history but ES doesn't for some reason
+[04/20 16:32:01] Chris Rech: there was an early instance of "not" in the chat
+[04/20 16:31:52] Chris Rech: it may only be indexing recent messages
+[04/20 06:07:43] Andrew Allen: Never mind just crashed again... Indexing while searching does not seem to be so nice
+[04/20 06:01:28] Andrew Allen: This was the error so I just increased the wait time back to 10 to be safe. Is that the same error as before?
+[04/20 02:36:21] Chris Rech: I it not he
+[04/20 02:36:20] Chris Rech: the and a that
+[04/20 02:36:02] Chris Rech: to of in for on with
+a
+[04/20 02:35:18] Chris Rech: can like time no just him known take people into year your
+[04/20 02:35:09] Chris Rech: would there their what so up out if about who get which go me when
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [ssh] returned 3 results.
+[04/19 15:40:46] Chris Rech: Alright, able to SSH in
+[04/19 15:16:27] Andrew Allen: You should be able to git pull/push from the repo on there since I added an ssh key to the repo
+[04/19 15:15:11] Andrew Allen: You can ssh into it:
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [database] returned 7 results.
+[04/19 20:07:01] Andrew Allen: Yes we do and no the database isn’t strictly necessary but I’m not totally sure how elastic search would handle 100s of index’s 
+[04/19 18:32:33] Chris Rech: So the database isn't strictly necessary right
+[03/15 02:57:28] Chris Rech: I'm ok with having it all stored locally unless we have time to do a database. We don't really need to make this efficient really
+[03/14 23:38:54] Andrew Allen: Worry about a database later if we want to scale
+[03/14 23:37:14] Andrew Allen: So ideally we have a database structure that stores everything and then we keep the most recently used/ most vital indexes alive (at scale that is) and then just index data as it needs to be searched (it’s really quick to index small amounts of text so the user wouldn’t even notice in most cases)
+[03/14 23:34:43] Andrew Allen: Well elasticsearch indexes data that you load into it, so it’s more of a temporary store. You can treat each index as a database table or collection, but I think it’s less stable and takes up more memory.
+[03/14 20:00:43] Andrew Allen: I think for a database it doesn’t really matter what we use, but I’d prefer one that stores the memory on disk such that if we had to bring the server down or move it we could just transfer the files and not have to re-pull all the data
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [think] returned 4 results.
+[03/20 04:38:28] Andrew Allen: It’s the second answer I think
+[03/14 23:34:43] Andrew Allen: Well elasticsearch indexes data that you load into it, so it’s more of a temporary store. You can treat each index as a database table or collection, but I think it’s less stable and takes up more memory.
+[03/14 20:00:43] Andrew Allen: I think for a database it doesn’t really matter what we use, but I’d prefer one that stores the memory on disk such that if we had to bring the server down or move it we could just transfer the files and not have to re-pull all the data
+[03/14 19:59:17] Andrew Allen: But I’ve gotten pretty comfortable with elasticsearch and I think we can just use it as a data store for right now as well
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [good, job, buddy] returned 2 results.
+[02/16 23:53:38] GroupMe: Chris Rech added Search Buddy to the group.
+[02/16 22:50:24] Andrew Allen: hi there buddy
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [hey] returned 0 results.
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [what, is, up] returned 9 results.
+[04/19 15:15:56] Andrew Allen: The password is: "LongLiveTyrion!123"
+[03/15 03:28:27] Andrew Allen: Yeah that’s what I was thinking
+[03/14 23:38:40] Andrew Allen: But for prototyping and building it right now we can just focus on building the right indexes (like what filters and info retrieval strategies we should apply) and then just keep everything in elasticsearch
+[03/14 23:37:14] Andrew Allen: So ideally we have a database structure that stores everything and then we keep the most recently used/ most vital indexes alive (at scale that is) and then just index data as it needs to be searched (it’s really quick to index small amounts of text so the user wouldn’t even notice in most cases)
+[03/14 23:34:43] Andrew Allen: Well elasticsearch indexes data that you load into it, so it’s more of a temporary store. You can treat each index as a database table or collection, but I think it’s less stable and takes up more memory.
+[03/14 22:14:05] Andrew Allen: A possible schema for our data, we would index all most recently used chats in elasticsearch is what I was thinking. It's in a draw.io file on the drive if you want to edit/add/remove stuff.
+[03/14 22:12:04] Andrew Allen: Here is a better image
+[03/14 20:00:43] Andrew Allen: I think for a database it doesn’t really matter what we use, but I’d prefer one that stores the memory on disk such that if we had to bring the server down or move it we could just transfer the files and not have to re-pull all the data
+[03/14 18:25:27] Chris Rech: https://aggiesalarytrends.azurewebsites.net/ is what i've spent this whole week working on actually
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [think] returned 4 results.
+[03/20 04:38:28] Andrew Allen: It’s the second answer I think
+[03/14 23:34:43] Andrew Allen: Well elasticsearch indexes data that you load into it, so it’s more of a temporary store. You can treat each index as a database table or collection, but I think it’s less stable and takes up more memory.
+[03/14 20:00:43] Andrew Allen: I think for a database it doesn’t really matter what we use, but I’d prefer one that stores the memory on disk such that if we had to bring the server down or move it we could just transfer the files and not have to re-pull all the data
+[03/14 19:59:17] Andrew Allen: But I’ve gotten pretty comfortable with elasticsearch and I think we can just use it as a data store for right now as well
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [Are, you, faster?] returned 10 results.
+[04/20 16:20:23] Andrew Allen: are you faster?
+[04/20 16:13:27] Andrew Allen: are you quick yet?
+[04/19 20:09:51] Andrew Allen: Do you have a python script running that continually queries and downloads all chats?
+[04/19 16:11:40] Chris Rech: Also do you want to meet on campus at 1:00 or 1:30ish 
+[04/19 15:20:24] Andrew Allen: Could you send a picture of that breakdown of needed tasks that you showed me yesterday?
+[04/19 15:16:59] Andrew Allen: I also installed the mongo shell which you can google about but it's just a cli to test stuff
+[04/19 15:16:27] Andrew Allen: You should be able to git pull/push from the repo on there since I added an ssh key to the repo
+[04/19 15:15:11] Andrew Allen: You can ssh into it:
+[03/14 23:39:31] Andrew Allen: The tables in yellow are kinda optional but would be neat
+[03/14 23:34:43] Andrew Allen: Well elasticsearch indexes data that you load into it, so it’s more of a temporary store. You can treat each index as a database table or collection, but I think it’s less stable and takes up more memory.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [it] returned 10 results.
+[04/20 16:20:40] Andrew Allen: Yo it works!!!!
+[04/19 16:26:28] Chris Rech: So there shouldn't be any issues with the query handling interface I just need to do the rest of the code for it
+[04/19 15:19:49] Andrew Allen: I also ported kibana to the public ip for the time being. You can view it to mess around with elasticsearch at: http://137.135.109.251:5601/
+[04/19 15:15:11] Andrew Allen: You can ssh into it:
+[03/20 04:38:00] Andrew Allen: Reading about it seems like it’s pretty dumb
+[03/20 04:37:42] Andrew Allen: It should be
+[03/20 01:00:55] Chris Rech: May have issues with Docker due to having Windows Home instead of Pro. Should be able to run it without docker fine, right?
+[03/14 23:34:43] Andrew Allen: Well elasticsearch indexes data that you load into it, so it’s more of a temporary store. You can treat each index as a database table or collection, but I think it’s less stable and takes up more memory.
+[03/14 20:00:43] Andrew Allen: I think for a database it doesn’t really matter what we use, but I’d prefer one that stores the memory on disk such that if we had to bring the server down or move it we could just transfer the files and not have to re-pull all the data
+[03/14 19:59:17] Andrew Allen: But I’ve gotten pretty comfortable with elasticsearch and I think we can just use it as a data store for right now as well
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [quick] returned 2 results.
+[04/20 16:13:27] Andrew Allen: are you quick yet?
+[03/14 23:37:14] Andrew Allen: So ideally we have a database structure that stores everything and then we keep the most recently used/ most vital indexes alive (at scale that is) and then just index data as it needs to be searched (it’s really quick to index small amounts of text so the user wouldn’t even notice in most cases)
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [] returned 0 results.
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [test111] returned 1 results.
+[04/20 16:23:58] Chris Rech: hi test111
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [added] returned 6 results.
+[04/19 15:16:27] Andrew Allen: You should be able to git pull/push from the repo on there since I added an ssh key to the repo
+[02/16 23:53:38] GroupMe: Chris Rech added Search Buddy to the group.
+[02/16 22:34:20] GroupMe: Chris Rech added the Flask Test bot
+[02/16 22:34:04] GroupMe: Andrew Allen added Cat Facts to the group.
+[02/16 22:01:04] GroupMe: Andrew Allen added the BasicBot bot
+[02/16 21:57:44] GroupMe: Andrew Allen added Chris Rech to the group.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [added] returned 6 results.
+[04/19 15:16:27] Andrew Allen: You should be able to git pull/push from the repo on there since I added an ssh key to the repo
+[02/16 23:53:38] GroupMe: Chris Rech added Search Buddy to the group.
+[02/16 22:34:20] GroupMe: Chris Rech added the Flask Test bot
+[02/16 22:34:04] GroupMe: Andrew Allen added Cat Facts to the group.
+[02/16 22:01:04] GroupMe: Andrew Allen added the BasicBot bot
+[02/16 21:57:44] GroupMe: Andrew Allen added Chris Rech to the group.
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [looking, good, bae] returned 0 results.
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [unless, I, just, never, actually, said, the, word, good] returned 10 results.
+[04/20 17:08:56] Chris Rech: That's not good at all
+[04/19 20:07:30] Andrew Allen: It’s all running in the same network of docker containers right now
+[04/19 18:55:08] Chris Rech: Do we have elasticsearch downloaded on the VM
+[04/19 18:33:30] Chris Rech: And we have the elasticsearch instance constantly running
+[04/19 18:32:33] Chris Rech: So the database isn't strictly necessary right
+[04/19 16:26:28] Chris Rech: So there shouldn't be any issues with the query handling interface I just need to do the rest of the code for it
+[04/19 16:07:52] Andrew Allen: I didn’t create a Db for any data yet. Pymongo will work fine as an interface there
+[04/19 15:43:48] Chris Rech: Can see the admin and local dbs 
+[04/19 15:19:49] Andrew Allen: I also ported kibana to the public ip for the time being. You can view it to mess around with elasticsearch at: http://137.135.109.251:5601/
+[04/19 15:16:59] Andrew Allen: I also installed the mongo shell which you can google about but it's just a cli to test stuff
+Thank you for using Search Buddy!
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10

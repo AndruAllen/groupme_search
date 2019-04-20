@@ -29,7 +29,7 @@ class QueryHandler:
         self.groupsToSearch = []
         #self.searchHandler = SearchHandler() #moved above so there is only one instance of MongoClient() and ElasticSearch()
         self.responseFormatter = ResponseFormatter()
-        self.DeleteIndexAllGroups()
+        #self.DeleteIndexAllGroups()
         self.reboot = True
     
     def GetGroupsFromUser(self):
