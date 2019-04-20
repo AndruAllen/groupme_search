@@ -49,21 +49,30 @@ class QueryHandler:
                 recentMessages.append(message)
             recentMessageId = messagesBlock[-1].data["id"]
     
-    def GetSearchRequestsFromMessages(self, messages, minTimestamp):
+    def PartitionMessages(self, messages, minTimestamp):
         searches = []
+        userMessages = []
         for message in messages:
             messageText = message.text
+            messagePoster = message.name
             if (messageText == None):
+                continue
+            if (messagePoster == self.MY_MENTION[1:]):
+                #posted by Search Buddy, ignore
                 continue
             findIndex = messageText.find(self.MY_MENTION)
             if (findIndex != -1):
                 searchKeywords = messageText[findIndex + len(self.MY_MENTION):].split()
-                searchPoster = message.name
                 searchTimestamp = message.data["created_at"]
-                if (searchPoster == self.MY_MENTION[1:] or searchTimestamp < minTimestamp):
+                if (searchTimestamp < minTimestamp):
+                    #old search, ignore
                     continue
-                searches.append({"keywords": searchKeywords, "poster": searchPoster, "timestamp": searchTimestamp})
-        return searches
+                #Search
+                searches.append({"keywords": searchKeywords, "poster": messagePoster, "timestamp": searchTimestamp})
+            else:
+                #User message
+                userMessages.append(message)
+        return [searches, userMessages]
     
     def GetRecentMessageId(self, group):
         groupId = self.searchHandler.GetIdFromGroup(group)
@@ -99,10 +108,11 @@ class QueryHandler:
     def HandleGroupOperations(self, group):
         recentMessageId = self.GetRecentMessageId(group)
         messages = self.GetRecentMessagesFromGroup(group, recentMessageId)
+        [searches, userMessages] = self.PartitionMessages(messages, self.INIT_TIME)
         self.UpdateRecentMessageId(group, messages)
-        self.searchHandler.InsertMessages(group, messages)
+        self.searchHandler.InsertMessages(group, userMessages)
         self.groupsToSearch.append(group)
-        self.searchesByGroup.append(self.GetSearchRequestsFromMessages(messages, self.INIT_TIME))
+        self.searchesByGroup.append(searches)
         
     def BulkRespondToSearches(self):
         for i in range(len(self.groupsToSearch)):
