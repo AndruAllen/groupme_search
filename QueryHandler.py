@@ -3,6 +3,7 @@ from SearchHandler import SearchHandler
 from ResponseFormatter import ResponseFormatter
 from time import sleep
 from datetime import datetime
+from pymongo import MongoClient
 
 class QueryHandler:
     
@@ -11,8 +12,12 @@ class QueryHandler:
         self.MY_MENTION = MY_MENTION
         self.INIT_TIME = self.GetInitTime()
         self.GROUPME_CHAR_LIM = 1000
+        self.mongo_client = MongoClient()
+        self.db = self.mongo_client['chats']
         self.client = Client.from_token(ACCESS_TOKEN)
-        self.recentMessageIdLookup = {}
+        self.recentMessageIdLookup = self.db['recentMessageIdLookup'].find_one({'_id':0}) # single document collection...
+        # new format: recentMessageIdLookup = {'_id':0, group_id_0:message_id_latest, ...}
+        #self.db['recentMessageIdLookup'].replace_one({'_id':0}, recentMessageIdLookup, upsert=True)
         self.searchHandler = SearchHandler()
         self.responseFormatter = ResponseFormatter()
         self.DeleteIndexAllGroups()
@@ -63,9 +68,9 @@ class QueryHandler:
                 searches.append({"keywords": searchKeywords, "poster": searchPoster, "timestamp": searchTimestamp})
         return searches
     
-    def GetRecentMessageId(self, group):
+    def GetRecentMessageId(self, group, recentMesageIdLookup):
         groupId = self.searchHandler.GetIdFromGroup(group)
-        if (groupId not in self.recentMessageIdLookup):
+        if (groupId not in recentMessageIdLookup):
             self.recentMessageIdLookup[groupId] = 0
         return self.recentMessageIdLookup[groupId]
     
@@ -108,8 +113,11 @@ class QueryHandler:
     def Execute(self):
         print("Executing query handler")
         groups = self.GetGroupsFromUser()
-        for group in groups:
-            self.HandleGroupOperations(group)
+        self.recentMessageIdLookup = self.db['recentMessageIdLookup'].find_one({'_id':0})
+        if self.recentMessageIdLookup != None:
+            for group in groups:
+                self.HandleGroupOperations(group)
+        self.db['recentMessageIdLookup'].replace_one({'_id':0}, self.recentMessageIdLookup, upsert=True)
         
         
         
