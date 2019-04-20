@@ -3407,3 +3407,954 @@ Traceback (most recent call last):
   File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+
+Hello Andrew Allen, your search for [added] returned 2 results.
+[04/20 02:32:05] GroupMe: Chris Rech added Search Buddy to the group.
+[04/20 02:31:49] GroupMe: Chris Rech added Andrew Allen to the group.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [added] returned 6 results.
+[04/19 15:16:27] Andrew Allen: You should be able to git pull/push from the repo on there since I added an ssh key to the repo
+[02/16 23:53:38] GroupMe: Chris Rech added Search Buddy to the group.
+[02/16 22:34:20] GroupMe: Chris Rech added the Flask Test bot
+[02/16 22:34:04] GroupMe: Andrew Allen added Cat Facts to the group.
+[02/16 22:01:04] GroupMe: Andrew Allen added the BasicBot bot
+[02/16 21:57:44] GroupMe: Andrew Allen added Chris Rech to the group.
+Thank you for using Search Buddy!
+
+created
+created
+created
+created
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Hello Andrew Allen, your search for [youi] returned 1 results.
+[04/20 18:01:04] Andrew Allen: youi
+Thank you for using Search Buddy!
+
+created
+created
+created
+created
+created
+Hello Andrew Allen, your search for [youi] returned 5 results.
+[04/20 18:07:22] Andrew Allen: youi
+[04/20 18:07:21] Andrew Allen: youi
+[04/20 18:07:19] Andrew Allen: youi
+[04/20 18:07:15] Andrew Allen: youi youi
+[04/20 18:01:04] Andrew Allen: youi
+Thank you for using Search Buddy!
+
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+created
+created
+created
+Hello Andrew Allen, your search for [added] returned 6 results.
+[04/19 15:16:27] Andrew Allen: You should be able to git pull/push from the repo on there since I added an ssh key to the repo
+[02/16 23:53:38] GroupMe: Chris Rech added Search Buddy to the group.
+[02/16 22:34:20] GroupMe: Chris Rech added the Flask Test bot
+[02/16 22:34:04] GroupMe: Andrew Allen added Cat Facts to the group.
+[02/16 22:01:04] GroupMe: Andrew Allen added the BasicBot bot
+[02/16 21:57:44] GroupMe: Andrew Allen added Chris Rech to the group.
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [ssh] returned 3 results.
+[04/19 15:40:46] Chris Rech: Alright, able to SSH in
+[04/19 15:16:27] Andrew Allen: You should be able to git pull/push from the repo on there since I added an ssh key to the repo
+[04/19 15:15:11] Andrew Allen: You can ssh into it:
+Thank you for using Search Buddy!
+
+created
+Hello Andrew Allen, your search for [added] returned 2 results.
+[04/20 02:32:05] GroupMe: Chris Rech added Search Buddy to the group.
+[04/20 02:31:49] GroupMe: Chris Rech added Andrew Allen to the group.
+Thank you for using Search Buddy!
+
+Request timeout on GetGroupsFromUser
+Hello Andrew Allen, your search for [added] returned 2 results.
+[04/20 02:32:05] GroupMe: Chris Rech added Search Buddy to the group.
+[04/20 02:31:49] GroupMe: Chris Rech added Andrew Allen to the group.
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [yeet] returned 0 results.
+Thank you for using Search Buddy!
+
+created
+created
+created
+Hello Andrew Allen, your search for [yeet] returned 1 results.
+[04/20 18:21:03] Andrew Allen: yeet
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [you] returned 3 results.
+[04/20 17:54:10] Andrew Allen: So if you want to reboot for now just reboot the docker-compose and the main.py
+[04/20 02:36:26] Chris Rech: as you this but his they
+[04/20 02:34:56] Chris Rech: you do at this but his
+Thank you for using Search Buddy!
+
+created
+Hello Andrew Allen, your search for [yeet] returned 1 results.
+[04/20 18:21:03] Andrew Allen: yeet
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [yeet] returned 1 results.
+[04/20 18:21:03] Andrew Allen: yeet
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [yeet] returned 1 results.
+[04/20 18:21:03] Andrew Allen: yeet
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [yeet@Search, Buddy, yeet@Search, Buddy, yeet@Search, Buddy, yeet] returned 6 results.
+[04/20 18:21:03] Andrew Allen: yeet
+[04/20 18:17:38] Andrew Allen: I just search added because it shows the inception of the group
+[04/19 20:07:01] Andrew Allen: Yes we do and no the database isn’t strictly necessary but I’m not totally sure how elastic search would handle 100s of index’s 
+[03/20 18:22:49] Chris Rech: Going to just try regular elastic search 
+[02/16 23:53:38] GroupMe: Chris Rech added Search Buddy to the group.
+[02/16 22:50:24] Andrew Allen: hi there buddy
+Thank you for using Search Buddy!
+
+created
+(2, [])
+Hello Andrew Allen, your search for [added] returned 7 results.
+[04/20 18:17:38] Andrew Allen: I just search added because it shows the inception of the group
+[04/19 15:16:27] Andrew Allen: You should be able to git pull/push from the repo on there since I added an ssh key to the repo
+[02/16 23:53:38] GroupMe: Chris Rech added Search Buddy to the group.
+[02/16 22:34:20] GroupMe: Chris Rech added the Flask Test bot
+[02/16 22:34:04] GroupMe: Andrew Allen added Cat Facts to the group.
+[02/16 22:01:04] GroupMe: Andrew Allen added the BasicBot bot
+[02/16 21:57:44] GroupMe: Andrew Allen added Chris Rech to the group.
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [quick] returned 2 results.
+[04/20 16:13:27] Andrew Allen: are you quick yet?
+[03/14 23:37:14] Andrew Allen: So ideally we have a database structure that stores everything and then we keep the most recently used/ most vital indexes alive (at scale that is) and then just index data as it needs to be searched (it’s really quick to index small amounts of text so the user wouldn’t even notice in most cases)
+Thank you for using Search Buddy!
+
+created
+Hello Chris Rech, your search for [there] returned 5 results.
+[04/20 16:32:01] Chris Rech: there was an early instance of "not" in the chat
+[04/20 15:16:03] Andrew Allen: hi there
+[04/20 04:49:37] Andrew Allen: hey there
+[04/20 02:36:31] Chris Rech: my one all would there their
+[04/20 02:35:09] Chris Rech: would there their what so up out if about who get which go me when
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [human] returned 1 results.
+[04/20 02:34:06] Chris Rech: human data and interaction
+Thank you for using Search Buddy!
+
+created
+created
+created
+created
+Hello Andrew Allen, your search for [added] returned 2 results.
+[04/20 02:32:05] GroupMe: Chris Rech added Search Buddy to the group.
+[04/20 02:31:49] GroupMe: Chris Rech added Andrew Allen to the group.
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [do] returned 2 results.
+[04/20 02:35:52] Chris Rech: be have do say get make go know take see come think
+[04/20 02:34:56] Chris Rech: you do at this but his
+Thank you for using Search Buddy!
+
+created
+Hello Andrew Allen, your search for [did, we, kill, it?] returned 3 results.
+[04/20 18:23:20] Andrew Allen: Did we kill it?
+[04/20 02:35:34] Chris Rech: good some could them see other than then now look only come its over think also back after use two
+[04/20 02:34:58] Chris Rech: by from they we say her she or
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [database] returned 7 results.
+[04/19 20:07:01] Andrew Allen: Yes we do and no the database isn’t strictly necessary but I’m not totally sure how elastic search would handle 100s of index’s 
+[04/19 18:32:33] Chris Rech: So the database isn't strictly necessary right
+[03/15 02:57:28] Chris Rech: I'm ok with having it all stored locally unless we have time to do a database. We don't really need to make this efficient really
+[03/14 23:38:54] Andrew Allen: Worry about a database later if we want to scale
+[03/14 23:37:14] Andrew Allen: So ideally we have a database structure that stores everything and then we keep the most recently used/ most vital indexes alive (at scale that is) and then just index data as it needs to be searched (it’s really quick to index small amounts of text so the user wouldn’t even notice in most cases)
+[03/14 23:34:43] Andrew Allen: Well elasticsearch indexes data that you load into it, so it’s more of a temporary store. You can treat each index as a database table or collection, but I think it’s less stable and takes up more memory.
+[03/14 20:00:43] Andrew Allen: I think for a database it doesn’t really matter what we use, but I’d prefer one that stores the memory on disk such that if we had to bring the server down or move it we could just transfer the files and not have to re-pull all the data
+Thank you for using Search Buddy!
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups/49935952/messages?after_id=155578544812891041
+created
+Hello Andrew Allen, your search for [added] returned 6 results.
+[04/19 15:16:27] Andrew Allen: You should be able to git pull/push from the repo on there since I added an ssh key to the repo
+[02/16 23:53:38] GroupMe: Chris Rech added Search Buddy to the group.
+[02/16 22:34:20] GroupMe: Chris Rech added the Flask Test bot
+[02/16 22:34:04] GroupMe: Andrew Allen added Cat Facts to the group.
+[02/16 22:01:04] GroupMe: Andrew Allen added the BasicBot bot
+[02/16 21:57:44] GroupMe: Andrew Allen added Chris Rech to the group.
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [quick] returned 2 results.
+[04/20 16:13:27] Andrew Allen: are you quick yet?
+[03/14 23:37:14] Andrew Allen: So ideally we have a database structure that stores everything and then we keep the most recently used/ most vital indexes alive (at scale that is) and then just index data as it needs to be searched (it’s really quick to index small amounts of text so the user wouldn’t even notice in most cases)
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [added] returned 2 results.
+[04/20 02:32:05] GroupMe: Chris Rech added Search Buddy to the group.
+[04/20 02:31:49] GroupMe: Chris Rech added Andrew Allen to the group.
+Thank you for using Search Buddy!
+
+created
+Request timeout on GetGroupsFromUser
+Hello Andrew Allen, your search for [las] returned 0 results.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [las] returned 2 results.
+[04/20 18:15:55] Andrew Allen: las
+[04/20 18:15:42] Andrew Allen: las
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [added] returned 7 results.
+[04/20 18:17:38] Andrew Allen: I just search added because it shows the inception of the group
+[04/19 15:16:27] Andrew Allen: You should be able to git pull/push from the repo on there since I added an ssh key to the repo
+[02/16 23:53:38] GroupMe: Chris Rech added Search Buddy to the group.
+[02/16 22:34:20] GroupMe: Chris Rech added the Flask Test bot
+[02/16 22:34:04] GroupMe: Andrew Allen added Cat Facts to the group.
+[02/16 22:01:04] GroupMe: Andrew Allen added the BasicBot bot
+[02/16 21:57:44] GroupMe: Andrew Allen added Chris Rech to the group.
+Thank you for using Search Buddy!
+
+created
+created
+Hello Andrew Allen, your search for [yeet] returned 1 results.
+[04/20 18:21:03] Andrew Allen: yeet
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [you] returned 3 results.
+[04/20 17:54:10] Andrew Allen: So if you want to reboot for now just reboot the docker-compose and the main.py
+[04/20 02:36:26] Chris Rech: as you this but his they
+[04/20 02:34:56] Chris Rech: you do at this but his
+Thank you for using Search Buddy!
+
+created
+Hello Andrew Allen, your search for [yeet] returned 1 results.
+[04/20 18:21:03] Andrew Allen: yeet
+Thank you for using Search Buddy!
+
+created
+(2, [])
+Hello Chris Rech, your search for [human] returned 1 results.
+[04/20 02:34:06] Chris Rech: human data and interaction
+Thank you for using Search Buddy!
+
+created
+created
+created
+created
+Hello Andrew Allen, your search for [yeet] returned 0 results.
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [do] returned 2 results.
+[04/20 02:35:52] Chris Rech: be have do say get make go know take see come think
+[04/20 02:34:56] Chris Rech: you do at this but his
+Thank you for using Search Buddy!
+
+created
+created
+created
+created
+created
+Hello Chris Rech, your search for [] returned 0 results.
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [test] returned 5 results.
+[04/19 15:16:59] Andrew Allen: I also installed the mongo shell which you can google about but it's just a cli to test stuff
+[02/16 23:18:19] Chris Rech: test
+[02/16 22:43:34] Flask Test: from web again
+[02/16 22:37:46] Flask Test: message from website 
+[02/16 22:34:20] GroupMe: Chris Rech added the Flask Test bot
+Thank you for using Search Buddy!
+
+created
+created
+created
+created
+Hello Andrew Allen, your search for [quickly] returned 1 results.
+[04/20 18:26:30] Andrew Allen: It responds really quickly now!
+Thank you for using Search Buddy!
+
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+created
+created
+created
+created
+created
+Request timeout on GetGroupsFromUser
+created
+created
+created
+created
+created
+created
+Request timeout on GetGroupsFromUser
+Hello Andrew Allen, your search for [sweet] returned 3 results.
+[04/20 18:28:46] Andrew Allen: Okay sweet
+[04/20 18:27:54] Andrew Allen: Alright sweet. Did you push all your changes to the report?
+[04/19 16:28:54] Andrew Allen: Okay sweet
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [added] returned 8 results.
+[04/20 18:23:02] Andrew Allen: searching added shows the first messages in the chat so I don't think so
+[04/20 18:17:38] Andrew Allen: I just search added because it shows the inception of the group
+[04/19 15:16:27] Andrew Allen: You should be able to git pull/push from the repo on there since I added an ssh key to the repo
+[02/16 23:53:38] GroupMe: Chris Rech added Search Buddy to the group.
+[02/16 22:34:20] GroupMe: Chris Rech added the Flask Test bot
+[02/16 22:34:04] GroupMe: Andrew Allen added Cat Facts to the group.
+[02/16 22:01:04] GroupMe: Andrew Allen added the BasicBot bot
+[02/16 21:57:44] GroupMe: Andrew Allen added Chris Rech to the group.
+Thank you for using Search Buddy!
+
+created
+created
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+created
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+created
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetRecentMessagesFromGroup
+Traceback (most recent call last):
+  File "./Main.py", line 11, in <module>
+    queryHandler.Execute()
+  File "/home/groupme_bot/groupme_search/QueryHandler.py", line 160, in Execute
+    self.HandleGroupOperations(group)
+  File "/home/groupme_bot/groupme_search/QueryHandler.py", line 126, in HandleGroupOperations
+    messages = self.GetRecentMessagesFromGroup(group, recentMessageId)
+  File "/home/groupme_bot/groupme_search/QueryHandler.py", line 59, in GetRecentMessagesFromGroup
+    if (len(messagesBlock.items) == 0):
+AttributeError: 'list' object has no attribute 'items'
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups/49770482/messages?after_id=155579401611121985
+
+created
+created
+created
+created
+Hello Andrew Allen, your search for [quickly] returned 1 results.
+[04/20 18:26:30] Andrew Allen: It responds really quickly now!
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [quickly] returned 1 results.
+[04/20 18:26:30] Andrew Allen: It responds really quickly now!
+Thank you for using Search Buddy!
+
+created
+Hello Andrew Allen, your search for [quickly] returned 1 results.
+[04/20 18:26:30] Andrew Allen: It responds really quickly now!
+Thank you for using Search Buddy!
+
+created
+Hello Andrew Allen, your search for [double] returned 3 results.
+[04/20 18:27:17] Andrew Allen: See it double sent for quickly then it didn't
+[04/20 18:25:33] Andrew Allen: Yeah, the only way it repondeds twice is if it sees that the search was sent twice which the groupme api might sometimes as sometimes it double sends the same message that I send once. Before monday we should probably add it to
+[04/20 18:23:13] Chris Rech: and it double responds? is that because two instances are running
+Thank you for using Search Buddy!
+
+created
+Request timeout on GetGroupsFromUser
+created
+created
+created
+created
+created
+created
+Request timeout on GetGroupsFromUser
+created
+created
+created
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+created
+created
+created
+Hello Andrew Allen, your search for [exist] returned 1 results.
+[04/20 18:37:18] Andrew Allen: I exist
+Thank you for using Search Buddy!
+
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Hello Andrew Allen, your search for [site, is, live] returned 10 results.
+[04/20 18:30:08] Chris Rech: I'm pushing the page limit as is tbh
+[04/20 18:28:36] Chris Rech: The report work is coming pretty quickly to me
+[04/20 18:25:33] Andrew Allen: Yeah, the only way it repondeds twice is if it sees that the search was sent twice which the groupme api might sometimes as sometimes it double sends the same message that I send once. Before monday we should probably add it to
+[04/20 18:23:13] Chris Rech: and it double responds? is that because two instances are running
+[04/19 15:15:56] Andrew Allen: The password is: "LongLiveTyrion!123"
+[04/19 15:15:04] Andrew Allen: So I've got a VM with mongo + es live
+[03/14 23:37:14] Andrew Allen: So ideally we have a database structure that stores everything and then we keep the most recently used/ most vital indexes alive (at scale that is) and then just index data as it needs to be searched (it’s really quick to index small amounts of text so the user wouldn’t even notice in most cases)
+[03/14 22:14:05] Andrew Allen: A possible schema for our data, we would index all most recently used chats in elasticsearch is what I was thinking. It's in a draw.io file on the drive if you want to edit/add/remove stuff.
+[03/14 22:12:04] Andrew Allen: Here is a better image
+[03/14 18:25:27] Chris Rech: https://aggiesalarytrends.azurewebsites.net/ is what i've spent this whole week working on actually
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [http] returned 1 results.
+[04/19 15:19:49] Andrew Allen: I also ported kibana to the public ip for the time being. You can view it to mess around with elasticsearch at: http://137.135.109.251:5601/
+Thank you for using Search Buddy!
+
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+created
+Request timeout on GetGroupsFromUser
+created
+created
+created
+created
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+created
+created
+created
+created
+Request timeout on GetGroupsFromUser
+created es index for: 49770482
+(72, [])
+created
+Hello Chris Rech, your search for [hello] returned 10 results.
+[02/16 23:40:49] BasicBot: hello
+
+[02/16 23:08:48] BasicBot: hello there from port 5000
+[02/16 22:58:10] BasicBot: hello there from port 5000
+[02/16 22:54:18] BasicBot: hello there from port 5000
+[02/16 22:50:52] BasicBot: hello there from port 5000
+[02/16 22:50:15] BasicBot: hello there from port 5000
+[02/16 22:49:23] BasicBot: hello there from port 5000
+[02/16 22:44:40] BasicBot: hello there from port 5000
+[02/16 22:36:50] Andrew Allen: hello
+[02/16 22:29:29] BasicBot: hello
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [database] returned 7 results.
+[04/19 20:07:01] Andrew Allen: Yes we do and no the database isn’t strictly necessary but I’m not totally sure how elastic search would handle 100s of index’s 
+[04/19 18:32:33] Chris Rech: So the database isn't strictly necessary right
+[03/15 02:57:28] Chris Rech: I'm ok with having it all stored locally unless we have time to do a database. We don't really need to make this efficient really
+[03/14 23:38:54] Andrew Allen: Worry about a database later if we want to scale
+[03/14 23:37:14] Andrew Allen: So ideally we have a database structure that stores everything and then we keep the most recently used/ most vital indexes alive (at scale that is) and then just index data as it needs to be searched (it’s really quick to index small amounts of text so the user wouldn’t even notice in most cases)
+[03/14 23:34:43] Andrew Allen: Well elasticsearch indexes data that you load into it, so it’s more of a temporary store. You can treat each index as a database table or collection, but I think it’s less stable and takes up more memory.
+[03/14 20:00:43] Andrew Allen: I think for a database it doesn’t really matter what we use, but I’d prefer one that stores the memory on disk such that if we had to bring the server down or move it we could just transfer the files and not have to re-pull all the data
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [problem] returned 4 results.
+[04/13 03:59:46] Chris Rech: It was just a gross problem 
+[04/13 03:59:39] Chris Rech: Yeah I was getting runtime errors and WAs for an hour straight on the string problem then just redid my solution to be slower and it ended up being fast enough anyways lol
+[04/13 03:51:09] Julia Graham: Yeah the trie thing is what I was going for but my implementation had some unknown problem. Unlucky
+[04/13 03:35:10] Michael Earl: No, not that, I'm just confused about not getting the hard case for the last problem
+Thank you for using Search Buddy!
+
+Hello Chris Rech, your search for [greedy] returned 5 results.
+[04/16 00:08:57] Michael Earl: So, at one point I tried a greedy thing for A. Turns out, I wasn't one line away from being correct, I was one character away, lol. Just needed to reverse the sorting order
+[04/13 19:04:26] Michael Earl: My greedy for C was only wrong in that I forgot that you might need to take a non-maximal length substring between two strings
+[04/13 03:45:36] Michael Earl: There was a greedy for C. Just the wrong greedy
+[04/13 03:35:48] Julia Graham: Yamen did greedy too and didn’t get the hard case
+[04/13 03:35:30] Michael Earl: Nah, I did a greedy thing
+Thank you for using Search Buddy!
+
+created
+created
+created
+created
+created
+Hello Michael Earl, your search for [fuck] returned 1 results.
+[04/13 03:33:10] Michael Earl: Fuck. My last second A resubmit brought me down to 1213
+Thank you for using Search Buddy!
+
+created
+created
+Request timeout on GetGroupsFromUser
+Request timeout on GetRecentMessagesFromGroup
+Traceback (most recent call last):
+  File "./Main.py", line 11, in <module>
+    queryHandler.Execute()
+  File "/home/groupme_bot/groupme_search/QueryHandler.py", line 160, in Execute
+    self.HandleGroupOperations(group)
+  File "/home/groupme_bot/groupme_search/QueryHandler.py", line 126, in HandleGroupOperations
+    messages = self.GetRecentMessagesFromGroup(group, recentMessageId)
+  File "/home/groupme_bot/groupme_search/QueryHandler.py", line 59, in GetRecentMessagesFromGroup
+    if (len(messagesBlock.items) == 0):
+AttributeError: 'list' object has no attribute 'items'
