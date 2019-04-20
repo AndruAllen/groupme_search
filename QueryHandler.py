@@ -18,6 +18,8 @@ class QueryHandler:
         self.recentMessageIdLookup = self.db['recentMessageIdLookup'].find_one({'_id':0}) # single document collection...
         # new format: recentMessageIdLookup = {'_id':0, group_id_0:message_id_latest, ...}
         #self.db['recentMessageIdLookup'].replace_one({'_id':0}, recentMessageIdLookup, upsert=True)
+        self.searchesByGroup = []
+        self.groupsToSearch = []
         self.searchHandler = SearchHandler()
         self.responseFormatter = ResponseFormatter()
         self.DeleteIndexAllGroups()
@@ -52,21 +54,30 @@ class QueryHandler:
                 recentMessages.append(message)
             recentMessageId = messagesBlock[-1].data["id"]
     
-    def GetSearchRequestsFromMessages(self, messages, minTimestamp):
+    def PartitionMessages(self, messages, minTimestamp):
         searches = []
+        userMessages = []
         for message in messages:
             messageText = message.text
+            messagePoster = message.name
             if (messageText == None):
+                continue
+            if (messagePoster == self.MY_MENTION[1:]):
+                #posted by Search Buddy, ignore
                 continue
             findIndex = messageText.find(self.MY_MENTION)
             if (findIndex != -1):
                 searchKeywords = messageText[findIndex + len(self.MY_MENTION):].split()
-                searchPoster = message.name
                 searchTimestamp = message.data["created_at"]
-                if (searchPoster == self.MY_MENTION[1:] or searchTimestamp < minTimestamp):
+                if (searchTimestamp < minTimestamp):
+                    #old search, ignore
                     continue
-                searches.append({"keywords": searchKeywords, "poster": searchPoster, "timestamp": searchTimestamp})
-        return searches
+                #Search
+                searches.append({"keywords": searchKeywords, "poster": messagePoster, "timestamp": searchTimestamp})
+            else:
+                #User message
+                userMessages.append(message)
+        return [searches, userMessages]
     
     def GetRecentMessageId(self, group, recentMesageIdLookup):
         groupId = self.searchHandler.GetIdFromGroup(group)
@@ -102,13 +113,20 @@ class QueryHandler:
     def HandleGroupOperations(self, group):
         recentMessageId = self.GetRecentMessageId(group)
         messages = self.GetRecentMessagesFromGroup(group, recentMessageId)
+        [searches, userMessages] = self.PartitionMessages(messages, self.INIT_TIME)
         self.UpdateRecentMessageId(group, messages)
-        self.searchHandler.InsertMessages(group, messages)
-        self.searches = self.GetSearchRequestsFromMessages(messages, self.INIT_TIME)
-        print("Sleeping in between group operations")
-        sleep(10)
-        for search in self.searches:
-            self.RespondToSearch(group, search)
+        self.searchHandler.InsertMessages(group, userMessages)
+        self.groupsToSearch.append(group)
+        self.searchesByGroup.append(searches)
+        
+    def BulkRespondToSearches(self):
+        for i in range(len(self.groupsToSearch)):
+            group = self.groupsToSearch[i]
+            searches = self.searchesByGroup[i]
+            for search in searches:
+                self.RespondToSearch(group, search)
+        self.groupsToSearch = []
+        self.searchesByGroup = []
     
     def Execute(self):
         print("Executing query handler")
@@ -118,9 +136,8 @@ class QueryHandler:
             for group in groups:
                 self.HandleGroupOperations(group)
         self.db['recentMessageIdLookup'].replace_one({'_id':0}, self.recentMessageIdLookup, upsert=True)
-        
-        
-        
+        sleep(2)
+        self.BulkRespondToSearches()
         
         
         
