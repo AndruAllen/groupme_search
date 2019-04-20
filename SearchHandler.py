@@ -34,18 +34,15 @@ class SearchHandler:
     def PerformSearchOnKeyword(self, groupId, keyword):
         self.BODY["query"]["query_string"]["query"] = keyword
         res = self.client.search(index = groupId, doc_type = self.DOC_TYPE, body = self.BODY)
-        print(len(res["hits"]["hits"]))
         return res["hits"]["hits"]
       
-    def ExecuteSearch(self, group, keywords, myMention):
-        print(group, keywords, myMention)
+    def ExecuteSearch(self, group, keywords, myMention, timeCutoff):
         combinedResults = {}
         groupId = self.GetIdFromGroup(group)
         for keyword in keywords:
             curResults = self.PerformSearchOnKeyword(groupId, keyword)
-            print(curResults)
             for result in curResults:
-                if (result["_source"]["Sender"] == myMention):
+                if (result["_source"]["Timestamp"] >= timeCutoff or result["_source"]["Sender"] == myMention):
                     continue
                 resultId = result["_source"]["Id"]
                 if (resultId not in combinedResults):
