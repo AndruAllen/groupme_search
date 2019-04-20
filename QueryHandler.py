@@ -1,4 +1,6 @@
 from groupy import Client
+from elasticsearch import Elasticsearch, helpers
+from elasticsearch.client import IndicesClient
 from SearchHandler import SearchHandler
 from ResponseFormatter import ResponseFormatter
 from time import sleep
@@ -12,7 +14,11 @@ class QueryHandler:
         self.MY_MENTION = MY_MENTION
         self.INIT_TIME = self.GetInitTime()
         self.GROUPME_CHAR_LIM = 1000
+        self.DOC_TYPE = "message"
         self.mongo_client = MongoClient()
+        self.es_client = Elasticsearch()
+        self.ind_client = IndicesClient(self.es_client)
+        self.searchHandler = SearchHandler(self.mongo_client, self.es_client, self.ind_client)
         self.db = self.mongo_client['chats']
         self.client = Client.from_token(ACCESS_TOKEN)
         # new format: recentMessageIdLookup = {'_id':0, group_id_0:message_id_latest, ...}
@@ -21,9 +27,10 @@ class QueryHandler:
             self.db['recentMessageIdLookup'].insert_one({'_id':0})
         self.searchesByGroup = []
         self.groupsToSearch = []
-        self.searchHandler = SearchHandler()
+        #self.searchHandler = SearchHandler() #moved above so there is only one instance of MongoClient() and ElasticSearch()
         self.responseFormatter = ResponseFormatter()
         self.DeleteIndexAllGroups()
+        self.reboot = True
     
     def GetGroupsFromUser(self):
         userGroups = []
@@ -82,8 +89,11 @@ class QueryHandler:
     
     def GetRecentMessageId(self, group):
         groupId = self.searchHandler.GetIdFromGroup(group)
-        if (groupId not in self.recentMessageIdLookup):
+        if (groupId not in self.recentMessageIdLookup): # new group
             self.recentMessageIdLookup[groupId] = 0
+            if(not self.ind_client.exists(index=groupId)):
+                self.ind_client.create(index=groupId, body={"settings" : {"index" : {"refresh_interval":"-1"}}})
+                print('created es index for:', groupId)
         return self.recentMessageIdLookup[groupId]
     
     def UpdateRecentMessageId(self, group, messages):
@@ -130,13 +140,26 @@ class QueryHandler:
         self.searchesByGroup = []
     
     def Execute(self):
-        print("Executing query handler")
+        #print("Executing query handler")
         groups = self.GetGroupsFromUser()
         self.recentMessageIdLookup = self.db['recentMessageIdLookup'].find_one({'_id':0})
+        '''
+        if(self.reboot):
+            self.reboot = False # run only once
+            for key in self.recentMessageIdLookup.keys():
+                try:
+                    exists = self.ind_client.exists(index=int(key))
+                    print(exists)
+                    if(not exists):
+                        self.ind_client.create(index=key, body={"settings" : {"index" : {"refresh_interval":"-1"}}})
+                        print(key, 'created just now?')
+                except:
+                    print(key, 'already in ES?')
+        '''
         for group in groups:
             self.HandleGroupOperations(group)
         self.db['recentMessageIdLookup'].replace_one({'_id':0}, self.recentMessageIdLookup, upsert=True)
-        sleep(2)
+        #sleep(10)
         self.BulkRespondToSearches()
         
         
