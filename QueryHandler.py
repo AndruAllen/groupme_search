@@ -13,6 +13,8 @@ class QueryHandler:
         self.GROUPME_CHAR_LIM = 1000
         self.client = Client.from_token(ACCESS_TOKEN)
         self.recentMessageIdLookup = {}
+        self.searchesByGroup = []
+        self.groupsToSearch = []
         self.searchHandler = SearchHandler()
         self.responseFormatter = ResponseFormatter()
         self.DeleteIndexAllGroups()
@@ -99,19 +101,25 @@ class QueryHandler:
         messages = self.GetRecentMessagesFromGroup(group, recentMessageId)
         self.UpdateRecentMessageId(group, messages)
         self.searchHandler.InsertMessages(group, messages)
-        self.searches = self.GetSearchRequestsFromMessages(messages, self.INIT_TIME)
-        print("Sleeping in between group operations")
-        sleep(10)
-        for search in self.searches:
-            self.RespondToSearch(group, search)
+        self.groupsToSearch.append(group)
+        self.searchesByGroup.append(self.GetSearchRequestsFromMessages(messages, self.INIT_TIME))
+        
+    def BulkRespondToSearches(self):
+        for i in range(len(self.groupsToSearch)):
+            group = self.groupsToSearch[i]
+            searches = self.searchesByGroup[i]
+            for search in searches:
+                self.RespondToSearch(group, search)
+        self.groupsToSearch = []
+        self.searchesByGroup = []
     
     def Execute(self):
         print("Executing query handler")
         groups = self.GetGroupsFromUser()
         for group in groups:
             self.HandleGroupOperations(group)
-        
-        
+        sleep(5)
+        self.BulkRespondToSearches()
         
         
         
