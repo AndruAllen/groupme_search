@@ -1,9 +1,12 @@
 from elasticsearch import Elasticsearch, helpers
+from pymongo import MongoClient
 
 class SearchHandler:
     
     def __init__(self):
         self.client = Elasticsearch()
+        self.mongo_client = MongoClient()
+        self.db = self.mongo_client['chats']
         self.DOC_TYPE = "message"
         self.BODY = {"size":100, "query": {"query_string": {"query": ""}}}
         self.CUTOFF = 10
@@ -29,6 +32,7 @@ class SearchHandler:
     
     def InsertMessages(self, group, messages):
         groupId = self.GetIdFromGroup(group)
+        if messages != []: self.db['group'+str(groupId)+'z'].insert_many(list(self.YieldMessages(groupId, messages)))
         helpers.bulk(self.client, self.YieldMessages(groupId, messages))
     
     def PerformSearchOnKeyword(self, groupId, keyword):

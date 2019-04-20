@@ -15,9 +15,10 @@ class QueryHandler:
         self.mongo_client = MongoClient()
         self.db = self.mongo_client['chats']
         self.client = Client.from_token(ACCESS_TOKEN)
-        self.recentMessageIdLookup = self.db['recentMessageIdLookup'].find_one({'_id':0}) # single document collection...
         # new format: recentMessageIdLookup = {'_id':0, group_id_0:message_id_latest, ...}
-        #self.db['recentMessageIdLookup'].replace_one({'_id':0}, recentMessageIdLookup, upsert=True)
+        self.recentMessageIdLookup = self.db['recentMessageIdLookup'].find_one({'_id':0}) # single document collection...
+        if self.recentMessageIdLookup == None:
+            self.db['recentMessageIdLookup'].insert_one({'_id':0})
         self.searchesByGroup = []
         self.groupsToSearch = []
         self.searchHandler = SearchHandler()
@@ -79,9 +80,9 @@ class QueryHandler:
                 userMessages.append(message)
         return [searches, userMessages]
     
-    def GetRecentMessageId(self, group, recentMesageIdLookup):
+    def GetRecentMessageId(self, group):
         groupId = self.searchHandler.GetIdFromGroup(group)
-        if (groupId not in recentMessageIdLookup):
+        if (groupId not in self.recentMessageIdLookup):
             self.recentMessageIdLookup[groupId] = 0
         return self.recentMessageIdLookup[groupId]
     
@@ -132,9 +133,8 @@ class QueryHandler:
         print("Executing query handler")
         groups = self.GetGroupsFromUser()
         self.recentMessageIdLookup = self.db['recentMessageIdLookup'].find_one({'_id':0})
-        if self.recentMessageIdLookup != None:
-            for group in groups:
-                self.HandleGroupOperations(group)
+        for group in groups:
+            self.HandleGroupOperations(group)
         self.db['recentMessageIdLookup'].replace_one({'_id':0}, self.recentMessageIdLookup, upsert=True)
         sleep(2)
         self.BulkRespondToSearches()
