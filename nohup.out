@@ -4358,3 +4358,372 @@ Traceback (most recent call last):
   File "/home/groupme_bot/groupme_search/QueryHandler.py", line 59, in GetRecentMessagesFromGroup
     if (len(messagesBlock.items) == 0):
 AttributeError: 'list' object has no attribute 'items'
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups/43298258/messages?after_id=155580055852743974
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+GET http://localhost:9200/48280673/message/_search [status:400 request:0.031s]
+(9, [])
+Hello Andrew Allen, your search for [hello] returned 1 results.
+[04/20 02:33:48] Chris Rech: hello world
+c
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [oh, no] returned 3 results.
+[04/20 18:23:00] Chris Rech: oh
+[04/20 16:30:52] Chris Rech: oh
+[04/20 02:35:18] Chris Rech: can like time no just him known take people into year your
+Thank you for using Search Buddy!
+
+created
+Hello Andrew Allen, your search for [] returned 0 results.
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [you, good] returned 10 results.
+[04/20 18:28:29] Chris Rech: You can try your hand at a landing page
+[04/20 18:28:19] Andrew Allen: Do you want me to work on the report or creating a quick landing page?
+[04/20 18:27:54] Andrew Allen: Alright sweet. Did you push all your changes to the report?
+[04/20 18:27:36] Chris Rech: hm yeah it should be good then
+[04/20 18:24:53] Chris Rech: well that was only one so thats' good
+[04/20 18:24:29] Chris Rech: hm you sure?
+[04/20 18:22:09] Andrew Allen: ah well I think it's good enough
+[04/20 18:17:13] Andrew Allen: It's good to reboot now I think
+[04/20 18:00:55] Andrew Allen: good
+[04/20 17:09:50] Chris Rech: Huh looks good then
+Thank you for using Search Buddy!
+
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+created es index for: 43298258
+(2448, [])
+Hello Andrew Allen, your search for [You, there?] returned 10 results.
+[04/17 21:45:24] David Ratliff: you right
+[02/14 02:05:25] David Ratliff: but you just said you haven't done that
+[02/06 15:46:22] Andrew Allen: Could you push what you have now and then document tonight?
+[02/06 15:41:40] Andrew Allen: If you have it now could you push it now?
+[01/23 18:53:04] David Ratliff: you guys aren't planning to wear business casual are you?
+[01/16 03:58:33] David Ratliff: @Suqian Wang can you please post your schedule as soon as you can?
+[12/06 21:17:55] Suqian Wang: You said send the updates and what you have done to you
+[11/28 23:41:39] Andrew Allen: Yeah it’s up to you, whatever you can make work
+[10/11 23:04:16] David Ratliff: you go girl
+[08/28 22:33:47] Suqian Wang: Depends on you two
+Thank you for using Search Buddy!
+
+created
+Hello David Ratliff, your search for [what, are, you] returned 10 results.
+[04/17 21:45:24] David Ratliff: you right
+[03/28 11:58:58] David Ratliff: Those are successfully being submitted
+[03/13 06:14:31] David Ratliff: what?
+[03/07 13:52:59] Andrew Allen: What party?
+[03/03 22:36:40] David Ratliff: what are your UINs?
+[02/27 22:23:56] David Ratliff: what?
+[02/14 02:05:25] David Ratliff: but you just said you haven't done that
+[02/06 15:46:22] Andrew Allen: Could you push what you have now and then document tonight?
+[02/06 15:41:40] Andrew Allen: If you have it now could you push it now?
+[01/23 18:53:04] David Ratliff: you guys aren't planning to wear business casual are you?
+Thank you for using Search Buddy!
+
+Request timeout on GetGroupsFromUser
+created
+created
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+created
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetRecentMessagesFromGroup
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Request timeout on GetGroupsFromUser
+Hello Andrew Allen, your search for [meeting] returned 10 results.
+[04/11 11:33:59] Andrew Allen: You’re in the wrong meeting
+[03/14 11:14:15] Andrew Allen: How long until the meeting?
+[02/14 12:29:57] Andrew Allen: Am I in the right meeting!
+[01/24 13:37:21] Andrew Allen: This 6:30 meeting is brutal....
+[01/09 21:02:01] Andrew Allen: Looks like there is a meeting tomorrow morning
+[10/24 21:53:27] Andrew Allen: Meeting as in the morning meeting tomorrow
+[10/18 13:04:17] Andrew Allen: No meeting this morning right?
+[10/17 17:19:19] Suqian Wang: Do we have a meeting tomorrow?
+[10/11 13:18:41] Andrew Allen: We have a Skype meeting today?
+[10/04 14:16:47] Suqian Wang: I'm completely lost the entire meeting
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [class, time] returned 10 results.
+[04/17 19:27:25] Andrew Allen: I can meet in the morning time!
+[04/10 18:02:37] Andrew Allen: Is our presentation at the same time?
+[04/08 18:28:19] Andrew Allen: Do we have class today?
+[03/28 12:14:30] David Ratliff: push one more time...?
+[03/28 12:13:45] Andrew Allen: Could you push one more time?
+[03/27 16:32:09] Andrew Allen: It just takes a long time to rebuild and I don't really have time �
+[03/21 11:48:25] David Ratliff: no that's just the placeholder time
+[03/21 03:00:45] Suqian Wang: Well then I’ll skip class then
+[01/31 18:30:27] Suqian Wang: This class sucks :/
+[01/31 18:30:03] David Ratliff: alright I guess we're going to class now :/
+Thank you for using Search Buddy!
+
+Hello Andrew Allen, your search for [here] returned 2 results.
+[04/20 17:47:55] Andrew Allen: here
+[03/14 22:12:04] Andrew Allen: Here is a better image
+Thank you for using Search Buddy!
+
+Traceback (most recent call last):
+  File "./Main.py", line 11, in <module>
+    queryHandler.Execute()
+  File "/home/groupme_bot/groupme_search/QueryHandler.py", line 163, in Execute
+    self.BulkRespondToSearches()
+  File "/home/groupme_bot/groupme_search/QueryHandler.py", line 138, in BulkRespondToSearches
+    self.RespondToSearch(group, search)
+  File "/home/groupme_bot/groupme_search/QueryHandler.py", line 111, in RespondToSearch
+    searchResults = self.searchHandler.ExecuteSearch(group, search["keywords"], self.MY_MENTION[1:], search["timestamp"])
+  File "/home/groupme_bot/groupme_search/SearchHandler.py", line 73, in ExecuteSearch
+    curResults = self.PerformSearchOnKeyword(groupId, keyword)
+  File "/home/groupme_bot/groupme_search/SearchHandler.py", line 66, in PerformSearchOnKeyword
+    res = self.es_client.search(index = groupId, doc_type = self.DOC_TYPE, body = self.BODY)
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 76, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 660, in search
+    doc_type, '_search'), params=params, body=body)
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/elasticsearch/transport.py", line 318, in perform_request
+    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 186, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/elasticsearch/connection/base.py", line 125, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(status_code, error_message, additional_info)
+elasticsearch.exceptions.RequestError: RequestError(400, 'search_phase_execution_exception', "Failed to parse query [/'df/d'|}{[]]")
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.groupme.com/v3/groups?page=1&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=2&per_page=10
+received a bad response
+Traceback (most recent call last):
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/groupy/session.py", line 28, in request
+    response.raise_for_status()
+  File "/home/groupme_bot/.local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 408 Client Error: Request Timeout for url: https://api.groupme.com/v3/groups?page=1&per_page=10

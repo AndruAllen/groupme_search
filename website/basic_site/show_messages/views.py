@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-    
+#So I don't have to deal with templates and production is quick and easy    
 temp_text = '''    
     <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#">
@@ -386,7 +386,7 @@ temp_text = '''
         </div>
         <h2>
               "TAKE OFF" searching in <a href="https://www.groupme.com/" target="_blank" rel="noopener">GroupMe</a> via:<br>
-              <b>searchbuddyo@gmail.com | (346) 250-1676</b>
+              <b>searchbuddyo@gmail.com | (346)250-1676</b>
         </h2>
       </main>
       <!--

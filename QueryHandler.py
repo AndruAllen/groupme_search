@@ -54,14 +54,14 @@ class QueryHandler:
             messagesBlock = []
             try:
                 messagesBlock = group.messages.list_after(recentMessageId)
+                if (len(messagesBlock.items) == 0):
+                    return recentMessages
+                for message in messagesBlock:
+                    recentMessages.append(message)
+                recentMessageId = messagesBlock[-1].data["id"]
             except:
                 print("Request timeout on GetRecentMessagesFromGroup")
-            if (len(messagesBlock.items) == 0):
-                return recentMessages
-            for message in messagesBlock:
-                recentMessages.append(message)
-            recentMessageId = messagesBlock[-1].data["id"]
-    
+                return []
     def PartitionMessages(self, messages, minTimestamp):
         searches = []
         userMessages = []

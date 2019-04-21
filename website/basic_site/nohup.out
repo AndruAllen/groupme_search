@@ -102,3 +102,34 @@ April 20, 2019 - 21:12:32
 Django version 2.2, using settings 'basic_site.settings'
 Starting development server at http://0.0.0.0:8080/
 Quit the server with CONTROL-C.
+[20/Apr/2019 21:23:40] "GET / HTTP/1.1" 200 16600
+[20/Apr/2019 21:26:48] "GET / HTTP/1.1" 200 16600
+[20/Apr/2019 21:26:49] "GET /favicon.ico HTTP/1.1" 404 77
+[20/Apr/2019 21:35:19] "GET / HTTP/1.1" 200 16600
+[20/Apr/2019 21:38:21] "GET / HTTP/1.1" 200 16600
+[20/Apr/2019 22:13:41] "GET / HTTP/1.1" 200 16600
+[20/Apr/2019 22:44:52] "GET / HTTP/1.1" 200 16600
+[20/Apr/2019 22:51:09] "GET / HTTP/1.1" 200 16600
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+April 20, 2019 - 21:12:55
+Django version 2.2, using settings 'basic_site.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[20/Apr/2019 22:51:27] "GET / HTTP/1.1" 200 16599
+[20/Apr/2019 22:51:29] "GET / HTTP/1.1" 200 16599
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+April 20, 2019 - 22:51:25
+Django version 2.2, using settings 'basic_site.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[21/Apr/2019 00:40:17] "GET / HTTP/1.1" 200 16599
