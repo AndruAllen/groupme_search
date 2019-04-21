@@ -12,7 +12,7 @@ class SearchHandler:
         self.db = self.mongo_client['chats']
         self.DOC_TYPE = "message"
         self.CUTOFF = 10
-        self.BODY = {"size":self.CUTOFF, "query": {"query_string": {"query": ""}}}
+        self.BODY = {"size":25, "query": {"query_string": {"query": ""}}}
     
     def GetIdFromGroup(self, group):
         return group.data["id"]
@@ -63,20 +63,26 @@ class SearchHandler:
     
     def PerformSearchOnKeyword(self, groupId, keyword):
         self.BODY["query"]["query_string"]["query"] = keyword
-        res = self.es_client.search(index = groupId, doc_type = self.DOC_TYPE, body = self.BODY)
+        res = self.es_client.search(index = groupId, doc_type = self.DOC_TYPE, q=keyword, default_operator='OR', 
+                                    body={}, request_timeout=600, size=25)
         return res["hits"]["hits"]
       
     def ExecuteSearch(self, group, keywords, myMention, timeCutoff):
         combinedResults = {}
         groupId = self.GetIdFromGroup(group)
-        for keyword in keywords:
-            curResults = self.PerformSearchOnKeyword(groupId, keyword)
-            for result in curResults:
-                if (result["_source"]["Timestamp"] >= timeCutoff or result["_source"]["Sender"] == myMention):
-                    continue
-                resultId = result["_source"]["Id"]
-                if (resultId not in combinedResults):
-                    combinedResults[resultId] = result
+        search_string = ' '.join([keyword.replace('>', ' ').replace('<', ' ') for keyword in keywords])
+        search_string = search_string.replace('   ',' ').replace('  ',' ').replace('\\',' ')
+        not_legal = ['+', '-', '=', '&&', '||', '!', '(', ')', '{', '}', '[', ']', '^', '"', '~', '*', '?', ':', '/']
+        for ch in not_legal:
+            if ch in search_string:
+                search_string = search_string.replace(ch,"\\"+ch)
+        curResults = self.PerformSearchOnKeyword(groupId, search_string) # the 'OR' operator will create a better search of all terms in ES
+        for result in curResults:
+            if (result["_source"]["Timestamp"] >= timeCutoff or result["_source"]["Sender"] == myMention):
+                continue
+            resultId = result["_source"]["Id"]
+            if (resultId not in combinedResults):
+                combinedResults[resultId] = result
         return list(sorted(combinedResults.items(), key = lambda item: -item[1]["_source"]["Timestamp"])[:self.CUTOFF])
         
         
